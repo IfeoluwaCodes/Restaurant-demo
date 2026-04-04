@@ -29,6 +29,7 @@ p {
   padding: 15px 0;
   text-align: center;
   backdrop-filter: blur(5px);
+  z-index: 1000; /* stays above everything */
 }
 
 .navbar a {
@@ -46,6 +47,8 @@ p {
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url('dr-muhammad-amer-77ItGP98s6g-unsplash.jpg') center/cover no-repeat;
   color: white;
+  position: relative;
+  z-index: 1;
 }
 
 /* HERO BUTTONS */
@@ -82,6 +85,8 @@ p {
 /* MENU */
 .menu {
   padding: 50px 20px;
+  position: relative;
+  z-index: 1; /* ensures it stays above weird floating elements */
 }
 
 .menu-section {
@@ -89,6 +94,8 @@ p {
   padding: 25px;
   margin: 40px 0;
   border-radius: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 /* FOOD GRID */
@@ -105,6 +112,69 @@ p {
   padding: 18px;
   border-radius: 20px;
   width: 250px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 0; /* keep cards below sections */
+}
+
+.food-item:hover {
+  transform: translateY(-8px);
+  z-index: 2; /* only rise when hovered */
+}
+
+.food-item img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* CONTACT */
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+/* ABOUT */
+.about {
+  background: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  padding: 15px;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+  .food-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .food-item {
+    width: 90%;
+  }
+}
+
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}  width: 250px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   transition: all 0.3s ease;
 }
