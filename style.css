@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  background: #fafafa;
 }
 
 h1 {
@@ -10,6 +11,7 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
+  color: #ff6600;
 }
 
 p {
@@ -51,9 +53,16 @@ p {
 .hero-buttons a {
   display: inline-block;
   margin: 5px;
-  padding: 20px 25px;
-  border-radius: 5px;
+  padding: 12px 24px;
+  border-radius: 30px;
   text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-buttons a:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
 .btn-menu {
@@ -91,6 +100,8 @@ p {
   border-radius: 15px;
   width: 250px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+  transition: 0.3s;
 }
 
 .food-item img {
