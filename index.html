@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Tasty Restaurant </title>
+  <title>Tasty Restaurant</title>
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,7 +24,11 @@
 <header class="hero">
   <h1>Delicious Bites</h1>
   <p>Fresh meals, fast delivery</p>
-  <a href="#menu" class="btn">View Menu</a>
+
+  <div class="hero-buttons">
+    <a href="#menu" class="btn-menu">View Menu</a>
+    <a href="https://wa.me/2348000000000" class="btn-whatsapp">Order on WhatsApp</a>
+  </div>
 </header>
 
 <!-- MENU -->
@@ -28,62 +36,79 @@
   <h2>Menu</h2>
 
   <!-- FOOD -->
-  <details>
-    <summary>Food</summary>
+  <div class="menu-section">
+    <details open>
+      <summary>Food</summary>
 
-    <div class="food-item">
-      <h3>Jollof Rice & Chicken</h3>
-      <img src="Screenshot_20260404-134936_2.jpg" alt="Food image">
-      <p>Smoky Nigerian jollof rice with grilled chicken</p>
-      <span>₦3,500</span>
-    </div>
+      <div class="food-container">
 
-    <div class="food-item">
-      <h3>Grilled Fish</h3>
-      <img src="Screenshot_20260404-134205_1.jpg" alt="Food image">
-      <p>Fresh grilled fish with spicy sauce and fries</p>
-      <span>₦5,000</span>
-    </div>
+        <div class="food-item">
+          <h3>Jollof Rice & Chicken</h3>
+          <img src="Screenshot_20260404-134936_2.jpg" alt="Jollof rice with grilled chicken">
+          <p>Smoky Nigerian jollof rice with grilled chicken</p>
+          <span>₦3,500</span>
+        </div>
 
-  <div class="food-item">
-      <h3>Fully Garnished Nigerian Soup</h3>
-      <img src="Screenshot_20260404-093701_1.jpg" alt="Food image">
-      <p>A plate of Nigerian made stew </p>
-      <span>₦3,500</span>
+        <div class="food-item">
+          <h3>Grilled Fish</h3>
+          <img src="Screenshot_20260404-134205_1.jpg" alt="Grilled fish with sauce and fries">
+          <p>Fresh grilled fish with spicy sauce and fries</p>
+          <span>₦5,000</span>
+        </div>
+
+        <div class="food-item">
+          <h3>Fully Garnished Nigerian Soup</h3>
+          <img src="Screenshot_20260404-093701_1.jpg" alt="Nigerian soup with garnish">
+          <p>Rich Nigerian soup served hot with assorted garnish</p>
+          <span>₦3,500</span>
+        </div>
+
+      </div>
+    </details>
   </div>
-  </details>
 
   <!-- SNACKS -->
-  <details>
-    <summary>Snacks</summary>
+  <div class="menu-section">
+    <details>
+      <summary>Snacks</summary>
 
-    <div class="food-item">
-      <h3>Shawarma</h3>
-      <img src="Screenshot_20260404-141137_1.jpg" alt="Snack image">
-      <p>Juicy shawarma with fresh veggies</p>
-      <span>₦2,500</span>
-    </div>
+      <div class="food-container">
 
-    <div class="food-item">
-      <h3>Parfait</h3>
-      <img src="Screenshot_20260404-141253_1.jpg" alt="Snack image">
-      <p>A sweet yoghurt based snack with fresh veggies</p>
-      <span>₦3,000</span>
-    </div>
-  
-  </details>
+        <div class="food-item">
+          <h3>Shawarma</h3>
+          <img src="Screenshot_20260404-141137_1.jpg" alt="Shawarma wrap">
+          <p>Juicy shawarma with fresh veggies</p>
+          <span>₦2,500</span>
+        </div>
+
+        <div class="food-item">
+          <h3>Parfait</h3>
+          <img src="Screenshot_20260404-141253_1.jpg" alt="Yoghurt parfait">
+          <p>Sweet yoghurt parfait with fruits and granola</p>
+          <span>₦3,000</span>
+        </div>
+
+      </div>
+    </details>
+  </div>
 
   <!-- DRINKS -->
-  <details>
-    <summary>Drinks</summary>
+  <div class="menu-section">
+    <details>
+      <summary>Drinks</summary>
 
-    <div class="food-item">
-      <h3>Mocktail</h3>
-      <img src="Screenshot_20260404-141444_1.jpg" alt="Drink image">
-      <p>Non-alcoholic Cocktail</p>
-      <span>₦2,500</span>
-    </div>
-  </details>
+      <div class="food-container">
+
+        <div class="food-item">
+          <h3>Mocktail</h3>
+          <img src="Screenshot_20260404-141444_1.jpg" alt="Fruit mocktail drink">
+          <p>Refreshing non-alcoholic cocktail</p>
+          <span>₦2,500</span>
+        </div>
+
+      </div>
+    </details>
+  </div>
 
 </section>
 
@@ -91,7 +116,7 @@
 <section id="contact" class="contact">
   <h2>Contact</h2>
   <p>📍 Abuja, Nigeria</p>
-  <p>📞 +234 XXX XXX XXXX</p>
+  <p>📞 +234 800 000 0000</p>
 </section>
 
 <!-- ABOUT -->
@@ -100,8 +125,8 @@
   <p>We serve delicious meals and snacks made with quality ingredients.</p>
 </footer>
 
-<!-- WHATSAPP BUTTON -->
-<a href="https://wa.me/234XXXXXXXXXX" class="whatsapp">
+<!-- WHATSAPP FLOAT BUTTON -->
+<a href="https://wa.me/2348000000000" class="whatsapp">
   <svg viewBox="0 0 32 32" width="24" height="24">
     <path fill="white"
       d="M16 .4C7.5.4.6 7.3.6 15.8c0 2.8.7 5.5 2.1 7.9L.4 31.6l8.1-2.1c2.3 1.2 4.8 1.8 7.5 1.8 8.5 0 15.4-6.9 15.4-15.4S24.5.4 16 .4zm0 28.1c-2.3 0-4.6-.6-6.6-1.7l-.5-.3-4.8 1.3 1.3-4.7-.3-.5c-1.2-2-1.8-4.3-1.8-6.7C3.3 8.4 9 2.7 16 2.7s12.7 5.7 12.7 12.7S23 28.5 16 28.5z"/>
