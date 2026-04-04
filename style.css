@@ -3,16 +3,29 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* HERO */
-.hero {
-  background: url('Screenshot_20260404-093504_1.jpg') center/cover no-repeat;
-  color: black;
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  padding: 10px;
   text-align: center;
-  padding: 100px 20px;
 }
 
-.hero h1 {
-  font-size: 3em;
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  margin-top: 60px;
+  padding: 100px 20px;
+  text-align: center;
+  background: url('Screenshot_20260404-093504_1.jpg') center/cover no-repeat;
+  color: white;
 }
 
 .btn {
@@ -24,43 +37,57 @@ body {
   margin-top: 10px;
 }
 
-/* ABOUT */
-.about {
-  padding: 40px;
-  text-align: center;
-}
-
 /* MENU */
 .menu {
-  padding: 40px;
+  padding: 20px;
+}
+
+details {
+  margin-top: 15px;
   background: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.menu-item {
-  margin: 20px 0;
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
 }
 
-/* CTA */
-.cta {
-  text-align: center;
-  padding: 40px;
+.food-item {
+  margin-top: 10px;
+}
+
+.food-item img {
+  width: 100%;
+  max-width: 300px;
 }
 
 /* CONTACT */
 .contact {
+  padding: 20px;
+  text-align: center;
+}
+
+/* ABOUT */
+.about {
   background: #222;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
 }
 
-/* MOBILE FIX */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
+/* WHATSAPP BUTTON */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  padding: 15px;
+  border-radius: 50%;
+    }body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
+
