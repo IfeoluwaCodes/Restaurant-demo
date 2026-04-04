@@ -24,7 +24,9 @@ body {
   margin-top: 60px;
   padding: 100px 20px;
   text-align: center;
-  background: url('Screenshot_20260404-093504_1.jpg') center/cover no-repeat;
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('Screenshot_20260404-093504_1.jpg') center/cover no-repeat;
   color: white;
 }
 
