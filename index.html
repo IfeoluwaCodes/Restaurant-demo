@@ -31,115 +31,118 @@
     </div>
   </header>
     
-    <!-- MENU -->
-  <section id="menu" class="menu">
-   <h2>Menu</h2> 
-    
-    <!-- FOOD --> 
-  <div class="menu-section">
-    <details open>
-      <summary>Food</summary>  <div class="food-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr Good Restaurant</title>
 
-        <div class="food-item">
-          <h3>Jollof Rice & Chicken</h3>
-          <img src="mohammad-fahim-pvqcYluq7UI-unsplash.jpg" alt="Jollof rice with grilled chicken">
-          <p>Smoky Nigerian jollof rice with grilled chicken</p>
-          <span>₦3,500</span>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-         <a href="https://wa.me/2348000000000?text=I%20want%20to%20order%20Jollof%20Rice%20%26%20Chicken" 
-        class="order-btn" target="_blank">
-        Order on WhatsApp
-      </a>
-    </div>
+<body>
 
-    <div class="food-item">
-        <h3>Grilled Fish</h3>
-        <img src="Screenshot_20260404-134205_1.jpg" alt="Grilled fish with sauce and fries">
-        <p>Fresh grilled fish with spicy sauce and fries</p>
-      <span>₦5,000</span>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2>Mr Good</h2>
+  <a href="#menu">Menu</a>
+  <a href="#cart">Order</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-      <a href="https://wa.me/2348000000000?text=I%20want%20to%20order%20Grilled%20Fish"
-       class="order-btn" target="_blank">
-        Order on WhatsApp
-      </a>
-    </div>
+<!-- HERO -->
+<header class="hero">
+  <h1>Hot. Delicious. Fresh.</h1>
+  <p>Bringing You Unforgettable Flavors</p>
 
-    <div class="food-item">
-      <h3>Fully Garnished Nigerian Soup</h3>
-      <img src="Screenshot_20260404-093701_1.jpg" alt="Nigerian soup with garnish">
-      <p>Rich Nigerian soup served hot with assorted garnish</p>
-      <span>₦3,500</span>
-
-      <a href="https://wa.me/2348000000000?text=I%20want%20to%20order%20Nigerian%20Soup" 
-      class="order-btn" target="_blank">
-        Order on WhatsApp
-      </a>
-    </div>
-
+  <div class="hero-buttons">
+    <a href="#menu" class="btn-menu">View Menu</a>
+    <a href="#cart" class="btn-whatsapp">Order Now</a>
   </div>
-</details>
+</header>
 
-  </div>  <!-- SNACKS -->  <div class="menu-section">
-    <details>
-      <summary>Snacks</summary>  <div class="food-container">
+<!-- CATEGORY SECTION -->
+<section class="categories">
+  <div class="category">
+    <h3>Delicious Soups</h3>
+    <p>Experience the rich flavors of Nigerian soups and sauces</p>
+  </div>
+
+  <div class="category">
+    <h3>Special Rice</h3>
+    <p>Authentic taste of local and intercontinental rice</p>
+  </div>
+
+  <div class="category">
+    <h3>Pastries</h3>
+    <p>Freshly made snacks and fillings</p>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="menu">
+  <h2>Order Online</h2>
+
+  <div class="food-container">
+
+    <div class="food-item">
+      <h3>Jollof Rice & Chicken</h3>
+      <span>₦3500</span>
+      <button onclick="addToCart('Jollof Rice & Chicken', 3500)">Add</button>
+    </div>
+
+    <div class="food-item">
+      <h3>Grilled Fish</h3>
+      <span>₦5000</span>
+      <button onclick="addToCart('Grilled Fish', 5000)">Add</button>
+    </div>
+
+    <div class="food-item">
+      <h3>Nigerian Soup</h3>
+      <span>₦3500</span>
+      <button onclick="addToCart('Nigerian Soup', 3500)">Add</button>
+    </div>
 
     <div class="food-item">
       <h3>Shawarma</h3>
-      <img src="Screenshot_20260404-141137_1.jpg" alt="Shawarma wrap">
-      <p>Juicy shawarma with fresh veggies</p>
-      <span>₦2,500</span>
-
-      <a href="https://wa.me/2348000000000?text=I%20want%20to%20order%20Shawarma" 
-       class="order-btn" target="_blank">
-        Order on WhatsApp
-      </a>
-    </div>
-
-    <div class="food-item">
-      <h3>Parfait</h3>
-      <img src="Screenshot_20260404-141253_1.jpg" alt="Yoghurt parfait">
-      <p>Sweet yoghurt parfait with fruits and granola</p>
-      <span>₦3,000</span>
-
-      <a href="https://wa.me/2348000000000?text=I%20want%20to%20order%20Parfait"
-      class="order-btn" target="_blank">
-        Order on WhatsApp
-      </a>
+      <span>₦2500</span>
+      <button onclick="addToCart('Shawarma', 2500)">Add</button>
     </div>
 
   </div>
-</details>
+</section>
 
-  </div>  <!-- DRINKS -->  <div class="menu-section">
-    <details>
-      <summary>Drinks</summary>  <div class="food-container">
+<!-- CART -->
+<section id="cart" class="cart">
+  <h2>Your Order</h2>
 
-    <div class="food-item">
-      <h3>Mocktail</h3>
-      <img src="Screenshot_20260404-141444_1.jpg" alt="Fruit mocktail drink">
-      <p>Refreshing non-alcoholic cocktail</p>
-      <span>₦2,500</span>
+  <div id="cart-items"></div>
 
-      <a href="https://wa.me/2348000000000?text=I%20want%20to%20order%20Mocktail"
-        class="order-btn" target="_blank">
-        Order on WhatsApp
-      </a>
-    </div>
+  <h3 id="total">Total: ₦0</h3>
 
-  </div>
-</details>
+  <button onclick="sendToWhatsApp()" class="checkout-btn">
+    Order on WhatsApp
+  </button>
+</section>
 
-  </div></section><!-- CONTACT --><section id="contact" class="contact">
-  <h2>Contact</h2>
-  <p>📍 Abuja, Nigeria</p>
-  <p>📞 +234 800 000 0000</p>
-</section><!-- ABOUT --><footer id="about" class="about">
-  <h2>About Us</h2>
-  <p>We serve delicious meals and snacks made with quality ingredients.</p>
-</footer><!-- WHATSAPP FLOAT BUTTON --><a href="https://wa.me/2348000000000" class="whatsapp">
-  <svg viewBox="0 0 32 32" width="24" height="24">
-    <path fill="white"
-      d="M16 .4C7.5.4.6 7.3.6 15.8c0 2.8.7 5.5 2.1 7.9L.4 31.6l8.1-2.1c2.3 1.2 4.8 1.8 7.5 1.8 8.5 0 15.4-6.9 15.4-15.4S24.5.4 16 .4zm0 28.1c-2.3 0-4.6-.6-6.6-1.7l-.5-.3-4.8 1.3 1.3-4.7-.3-.5c-1.2-2-1.8-4.3-1.8-6.7C3.3 8.4 9 2.7 16 2.7s12.7 5.7 12.7 12.7S23 28.5 16 28.5z"/>
-  </svg>
-</a></body>
-      </html>
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+
+  <p>📍 Lugbe, Abuja</p>
+  <p>📞 09153792537</p>
+
+  <a href="https://wa.me/2349153792537" class="whatsapp-btn">
+    Chat on WhatsApp
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© Mr Good Restaurant</p>
+</footer>
+
+</body>
+  </html>
