@@ -96,6 +96,7 @@ p {
   border-radius: 20px;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 /* FOOD GRID */
