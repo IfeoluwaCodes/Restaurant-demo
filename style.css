@@ -6,7 +6,7 @@ body {
 /* HERO */
 .hero {
   background: url('Screenshot_20260404-093504_1.jpg') center/cover no-repeat;
-  color: white;
+  color: black;
   text-align: center;
   padding: 100px 20px;
 }
