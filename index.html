@@ -3,57 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tasty Bites Restaurant</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Restaurant</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <!-- HERO SECTION -->
-  <header class="hero">
-    <h1>Tasty Bites</h1>
-    <p>Delicious meals, delivered fresh</p>
-    <a href="#menu" class="btn">View Menu</a>
-  </header>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="#menu">Menu</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</nav>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <h2>About Us</h2>
-    <p>We serve freshly made meals with the best ingredients in Abuja.</p>
-  </section>
+<!-- HERO -->
+<header class="hero">
+  <h1>Delicious Bites</h1>
+  <p>Fresh meals, fast delivery</p>
+  <a href="#menu" class="btn">View Menu</a>
+</header>
 
-  <!-- MENU -->
-  <section id="menu" class="menu">
-    <h2>Our Menu</h2>
+<!-- MENU -->
+<section id="menu" class="menu">
+  <h2>Menu</h2>
 
-    <div class="menu-item">
+  <!-- FOOD -->
+  <details>
+    <summary>Food</summary>
+
+    <div class="food-item">
       <h3>Jollof Rice & Chicken</h3>
-      <p>₦3,500</p>
+      <img src="https://via.placeholder.com/300" alt="">
+      <p>Smoky Nigerian jollof rice with grilled chicken</p>
+      <span>₦3,500</span>
     </div>
 
-    <div class="menu-item">
+    <div class="food-item">
       <h3>Grilled Fish</h3>
-      <p>₦5,000</p>
+      <img src="https://via.placeholder.com/300" alt="">
+      <p>Fresh grilled fish with spicy sauce</p>
+      <span>₦5,000</span>
     </div>
+  </details>
 
-    <div class="menu-item">
+  <!-- SNACKS -->
+  <details>
+    <summary>Snacks</summary>
+
+    <div class="food-item">
       <h3>Shawarma</h3>
-      <p>₦2,500</p>
+      <img src="https://via.placeholder.com/300" alt="">
+      <p>Juicy shawarma with fresh veggies</p>
+      <span>₦2,500</span>
     </div>
+  </details>
 
-  </section>
+  <!-- DRINKS -->
+  <details>
+    <summary>Drinks</summary>
 
-  <!-- CTA -->
-  <section class="cta">
-    <h2>Order Now</h2>
-    <a href="#" class="btn">Chat on WhatsApp</a>
-  </section>
+    <div class="food-item">
+      <h3>Fresh Juice</h3>
+      <img src="https://via.placeholder.com/300" alt="">
+      <p>Natural fruit juice</p>
+      <span>₦1,500</span>
+    </div>
+  </details>
 
-  <!-- CONTACT -->
-  <footer class="contact">
-    <p>Location: Abuja, Nigeria</p>
-    <p>Open: 9AM - 10PM</p>
-    <p>Phone: +234 XXX XXX XXXX</p>
-  </footer>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>📍 Abuja, Nigeria</p>
+  <p>📞 +234 XXX XXX XXXX</p>
+</section>
+
+<!-- ABOUT -->
+<footer id="about" class="about">
+  <h2>About Us</h2>
+  <p>We serve delicious meals made with quality ingredients.</p>
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/234XXXXXXXXXX" class="whatsapp">
+  <svg viewBox="0 0 32 32" width="24" height="24">
+    <path fill="white"
+      d="M16 .4C7.5.4.6 7.3.6 15.8c0 2.8.7 5.5 2.1 7.9L.4 31.6l8.1-2.1c2.3 1.2 4.8 1.8 7.5 1.8 8.5 0 15.4-6.9 15.4-15.4S24.5.4 16 .4zm0 28.1c-2.3 0-4.6-.6-6.6-1.7l-.5-.3-4.8 1.3 1.3-4.7-.3-.5c-1.2-2-1.8-4.3-1.8-6.7C3.3 8.4 9 2.7 16 2.7s12.7 5.7 12.7 12.7S23 28.5 16 28.5z"/>
+  </svg>
+</a>
 
 </body>
-    </html>
+</html>
