@@ -81,6 +81,23 @@ p {
   color: #ff6600;
 }
 
+.btn-whatsapp {
+  display: inline-block;
+  margin: 5px;
+  padding: 14px 28px;
+  background: #25D366;
+  color: white;
+  border-radius: 50px; /* pill shape */
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
 /* MENU */
 .menu {
   padding: 60px 20px;
